@@ -9,8 +9,277 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/mdl/material.css" rel="stylesheet" type="text/css"/>
+        <link href="css/cssGeneral.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="css/mdl/material.js" type="text/javascript"></script>
+        <link href="css/mdl/material.min.css" rel="stylesheet" type="text/css"/>
+        <script src="css/mdl/material.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+             mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <div class="mdl-layout-spacer"></div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                         mdl-textfield--floating-label mdl-textfield--align-right">
+                        <label class="mdl-button mdl-js-button mdl-button--icon"
+                               for="fixed-header-drawer-exp">
+                            <i class="material-icons">search</i>
+                        </label>
+                        <div class="mdl-textfield__expandable-holder">
+                            <input class="mdl-textfield__input" type="text" name="sample"
+                                   id="fixed-header-drawer-exp">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Empresa</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="">Inicio</a>
+                    <a class="mdl-navigation__link" href="">Seccion</a>
+                    <a class="mdl-navigation__link" href="">Seccion</a>
+                    <a class="mdl-navigation__link" href="">Seccion</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <!-- contenido de la pagina -->
+                    <div class="mdl-grid" style="height: auto;">
+                        <div class="mdl-cell mdl-cell--12-col tarjetas" style="padding: 0px; border-radius: 0px;">
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+
+                                    <div class="item active">
+                                        <img src="http://www.metalco.net/assets/images/products/laminas/ondulada/lamina-ondulada-silver.jpg" alt="Chania" width="460" height="345">
+                                        <div class="carousel-caption">
+                                            <h3>Chania</h3>
+                                            <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="http://www.metalco.net/assets/images/products/laminas/ondulada/lamina-ondulada-silver.jpg" alt="Chania" width="460" height="345">
+                                        <div class="carousel-caption">
+                                            <h3>Chania</h3>
+                                            <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="http://www.metalco.net/assets/images/products/laminas/ondulada/lamina-ondulada-silver.jpg" alt="Flower" width="460" height="345">
+                                        <div class="carousel-caption">
+                                            <h3>Flowers</h3>
+                                            <p>Beautiful flowers in Kolymbari, Crete.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="http://www.metalco.net/assets/images/products/laminas/ondulada/lamina-ondulada-silver.jpg" alt="Flower" width="460" height="345">
+                                        <div class="carousel-caption">
+                                            <h3>Flowers</h3>
+                                            <p>Beautiful flowers in Kolymbari, Crete.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- departamentos de la pagina -->
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--12-col titulos">
+                            Categoria X <span class="links">Ver más</span>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col tarjetas">
+                            <div class="imagenProducto">
+                                <img class="center" src="http://www.metalco.net/assets/images/products/laminas/ondulada/lamina-ondulada-silver.jpg" />
+                            </div>
+                            <div class="infoProducto">
+                                <div class="precioProducto">
+                                    $1000.00
+                                </div>
+                                <div class="nombreProducto">
+                                    nombre del producto  maximo dos lineas, sino cabe se corta con puntos...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col tarjetas">
+                            <div class="imagenProducto">
+                                <img class="center" src="http://www.metalco.net/assets/images/products/laminas/ondulada/lamina-ondulada-silver.jpg" />
+                            </div>
+                            <div class="infoProducto">
+                                <div class="precioProducto">
+                                    $1000.00
+                                </div>
+                                <div class="nombreProducto">
+                                    nombre del producto  maximo dos lineas, sino cabe se corta con puntos...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col tarjetas">
+                            <div class="imagenProducto">
+                                <img class="center" src="http://www.metalco.net/assets/images/products/laminas/ondulada/lamina-ondulada-silver.jpg" />
+                            </div>
+                            <div class="infoProducto">
+                                <div class="precioProducto">
+                                    $1000.00
+                                </div>
+                                <div class="nombreProducto">
+                                    nombre del producto  maximo dos lineas, sino cabe se corta con puntos...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col tarjetas">
+                            <div class="imagenProducto">
+                                <img class="center" src="http://www.metalco.net/assets/images/products/laminas/ondulada/lamina-ondulada-silver.jpg" />
+                            </div>
+                            <div class="infoProducto">
+                                <div class="precioProducto">
+                                    $1000.00
+                                </div>
+                                <div class="nombreProducto">
+                                    nombre del producto  maximo dos lineas, sino cabe se corta con puntos...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col tarjetas">
+                            <div class="imagenProducto">
+                                <img class="center" src="http://www.metalco.net/assets/images/products/laminas/ondulada/lamina-ondulada-silver.jpg" />
+                            </div>
+                            <div class="infoProducto">
+                                <div class="precioProducto">
+                                    $1000.00
+                                </div>
+                                <div class="nombreProducto">
+                                    nombre del producto  maximo dos lineas, sino cabe se corta con puntos...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col tarjetas">
+                            <div class="imagenProducto">
+                                <img class="center" src="http://www.metalco.net/assets/images/products/laminas/ondulada/lamina-ondulada-silver.jpg" />
+                            </div>
+                            <div class="infoProducto">
+                                <div class="precioProducto">
+                                    $1000.00
+                                </div>
+                                <div class="nombreProducto">
+                                    nombre del producto  maximo dos lineas, sino cabe se corta con puntos...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--12-col titulos">
+                            Categoria X <span class="links">Ver más</span>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col tarjetas">
+                            <div class="imagenProducto">
+                                <img class="center" src="http://www.metalco.net/assets/images/products/laminas/ondulada/lamina-ondulada-silver.jpg" />
+                            </div>
+                            <div class="infoProducto">
+                                <div class="precioProducto">
+                                    $1000.00
+                                </div>
+                                <div class="nombreProducto">
+                                    nombre del producto  maximo dos lineas, sino cabe se corta con puntos...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col tarjetas">
+                            <div class="imagenProducto">
+                                <img class="center" src="http://www.metalco.net/assets/images/products/laminas/ondulada/lamina-ondulada-silver.jpg" />
+                            </div>
+                            <div class="infoProducto">
+                                <div class="precioProducto">
+                                    $1000.00
+                                </div>
+                                <div class="nombreProducto">
+                                    nombre del producto  maximo dos lineas, sino cabe se corta con puntos...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col tarjetas">
+                            <div class="imagenProducto">
+                                <img class="center" src="http://www.metalco.net/assets/images/products/laminas/ondulada/lamina-ondulada-silver.jpg" />
+                            </div>
+                            <div class="infoProducto">
+                                <div class="precioProducto">
+                                    $1000.00
+                                </div>
+                                <div class="nombreProducto">
+                                    nombre del producto  maximo dos lineas, sino cabe se corta con puntos...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col tarjetas">
+                            <div class="imagenProducto">
+                                <img class="center" src="http://www.metalco.net/assets/images/products/laminas/ondulada/lamina-ondulada-silver.jpg" />
+                            </div>
+                            <div class="infoProducto">
+                                <div class="precioProducto">
+                                    $1000.00
+                                </div>
+                                <div class="nombreProducto">
+                                    nombre del producto  maximo dos lineas, sino cabe se corta con puntos...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col tarjetas">
+                            <div class="imagenProducto">
+                                <img class="center" src="http://www.metalco.net/assets/images/products/laminas/ondulada/lamina-ondulada-silver.jpg" />
+                            </div>
+                            <div class="infoProducto">
+                                <div class="precioProducto">
+                                    $1000.00
+                                </div>
+                                <div class="nombreProducto">
+                                    nombre del producto  maximo dos lineas, sino cabe se corta con puntos...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col tarjetas">
+                            <div class="imagenProducto">
+                                <img class="center" src="http://www.metalco.net/assets/images/products/laminas/ondulada/lamina-ondulada-silver.jpg" />
+                            </div>
+                            <div class="infoProducto">
+                                <div class="precioProducto">
+                                    $1000.00
+                                </div>
+                                <div class="nombreProducto">
+                                    nombre del producto  maximo dos lineas, sino cabe se corta con puntos...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
     </body>
 </html>
